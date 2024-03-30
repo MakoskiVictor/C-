@@ -1,15 +1,16 @@
 ﻿using System.Globalization;
+using MyLoops;
 
 internal class Program
 {
   // Primitive Types
-  static readonly byte byteNumber = 255; // From 0 to 255
-  static readonly short shortNumber = 32767; // From -32768 to 32767
-  static readonly int intNumber = 2100000000; // From -2.1B to 2.1B
-  //static readonly long longNumber = 2200000000; // Infinite
-  //REAL NUMBERS
-  static readonly float floatNumber = 2.14f; // Need use "f" at the end
-  static readonly double doubleNumber = 2.14; // ==> This is the default
+  // static readonly byte byteNumber = 255; // From 0 to 255
+  // static readonly short shortNumber = 32767; // From -32768 to 32767
+  // static readonly int intNumber = 2100000000; // From -2.1B to 2.1B
+  // //static readonly long longNumber = 2200000000; // Infinite
+  // //REAL NUMBERS
+  // static readonly float floatNumber = 2.14f; // Need use "f" at the end
+  // static readonly double doubleNumber = 2.14; // ==> This is the default
   //static decimal decimalNumber = 2.14m; // Need use "m" at the end
 
   // CHARACTER
@@ -20,7 +21,7 @@ internal class Program
 
   // CONSTANTS
 
-  const double PI = 3.14;
+  // const double PI = 3.14;
   private static void Main()
   {
     // Console.WriteLine("Hello, World!");
@@ -28,14 +29,14 @@ internal class Program
     // Console.Write("This is the first Write");
     // Console.Write("This is the second Write");
 
-    PrintIn(byteNumber);
-    PrintIn(shortNumber);
-    PrintIn(intNumber);
-    //PrintIn(longNumber);
-    PrintInDouble(floatNumber);
-    PrintInDouble(doubleNumber);
+    // PrintIn(byteNumber);
+    // PrintIn(shortNumber);
+    // PrintIn(intNumber);
+    // //PrintIn(longNumber);
+    // PrintInDouble(floatNumber);
+    // PrintInDouble(doubleNumber);
    // PrintIn(decimalNumber);
-    Console.WriteLine($"This is the constant: {PI}");
+    // Console.WriteLine($"This is the constant: {PI}");
 
       // OVERFLOWING ==> SI el número que puede contener un tipo de datos es excedido
     // checked {
@@ -43,6 +44,13 @@ internal class Program
     //   number = number + 1;
 
     // }
+    
+    Loops MyFn = new();
+    MyFn.WriteInConsole(-1);
+    MyFn.WriteInConsole(0);
+    MyFn.WriteInConsole(1);
+
+    Loops.LoopFromZeroTo(20);
   }
 
 
