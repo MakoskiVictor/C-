@@ -2,22 +2,6 @@
 
 internal class Program
 {
-  private static void Main()
-  {
-    // Console.WriteLine("Hello, World!");
-    // Console.WriteLine("The second line");
-    // Console.Write("This is the first Write");
-    // Console.Write("This is the second Write");
-
-    PrintIn(byteNumber);
-    PrintIn(shortNumber);
-    PrintIn(intNumber);
-    //PrintIn(longNumber);
-    PrintInDouble(floatNumber);
-    PrintInDouble(doubleNumber);
-   // PrintIn(decimalNumber);
-    Console.WriteLine($"This is the constant: {PI}");
-  }
   // Primitive Types
   static readonly byte byteNumber = 255; // From 0 to 255
   static readonly short shortNumber = 32767; // From -32768 to 32767
@@ -37,6 +21,31 @@ internal class Program
   // CONSTANTS
 
   const double PI = 3.14;
+  private static void Main()
+  {
+    // Console.WriteLine("Hello, World!");
+    // Console.WriteLine("The second line");
+    // Console.Write("This is the first Write");
+    // Console.Write("This is the second Write");
+
+    PrintIn(byteNumber);
+    PrintIn(shortNumber);
+    PrintIn(intNumber);
+    //PrintIn(longNumber);
+    PrintInDouble(floatNumber);
+    PrintInDouble(doubleNumber);
+   // PrintIn(decimalNumber);
+    Console.WriteLine($"This is the constant: {PI}");
+
+      // OVERFLOWING ==> SI el número que puede contener un tipo de datos es excedido
+    // checked {
+    //   byte number = 255;
+    //   number = number + 1;
+
+    // }
+  }
+
+
 
 
   public static void PrintIn (int arg) {
