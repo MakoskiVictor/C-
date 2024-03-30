@@ -20,5 +20,20 @@ namespace MyLoops
                 else if (i % 2 != 0) System.Console.WriteLine($"{i} es impar");
             }
         }
+
+        public static void WritePairNumbersUntil(int num) {
+            if (num < 1) throw new ArgumentException("The number can't be minor than 1");
+            int count = 1;
+            List<int> numbers = new List<int>();
+            while(count <= num) {
+                if(count % 2 == 0) {
+                numbers.Add(count);
+                }
+
+                count++;
+            }
+            numbers.ForEach(Console.WriteLine);
+
+        }
     }
 }

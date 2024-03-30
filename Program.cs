@@ -45,12 +45,15 @@ internal class Program
 
     // }
     
-    Loops MyFn = new();
-    MyFn.WriteInConsole(-1);
-    MyFn.WriteInConsole(0);
-    MyFn.WriteInConsole(1);
+    // Loops MyFn = new();
+    // MyFn.WriteInConsole(-1);
+    // MyFn.WriteInConsole(0);
+    // MyFn.WriteInConsole(1);
 
-    Loops.LoopFromZeroTo(20);
+    // Loops.LoopFromZeroTo(20);
+
+    Loops.WritePairNumbersUntil(50);
+
   }
 
 
