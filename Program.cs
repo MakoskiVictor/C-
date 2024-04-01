@@ -1,4 +1,5 @@
 ﻿using System.Globalization;
+using c_;
 using MyLoops;
 
 internal class Program
@@ -52,7 +53,11 @@ internal class Program
 
     // Loops.LoopFromZeroTo(20);
 
-    Loops.WritePairNumbersUntil(50);
+    // Loops.WritePairNumbersUntil(50);
+
+    // ARRAYS
+    int[] myArray = [1, 2, 3, 4, 5];
+    Arrays.WriteTheArray(myArray);
 
   }
 
