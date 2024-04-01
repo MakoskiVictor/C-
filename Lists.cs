@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 
 namespace c_
 {
-    public class Lists
-    {
+    public class Lists(int arg1, int arg2, int arg3)
+  {
 
     //     Listas:
 
@@ -24,13 +24,9 @@ namespace c_
     // arrays, debido a la variedad de métodos disponibles y la necesidad de utilizar la clase List<T> del espacio
     //  de nombres System.Collections.Generic.
 
-        private List<int> listNumbers = new List<int>();
-        
-        public Lists(int arg1,int arg2, int arg3) {
-            listNumbers = [arg1, arg2, arg3];
-        }
+        private List<int> listNumbers = [arg1, arg2, arg3];
 
-        public void writeList() {
+    public void WriteList() {
             System.Console.WriteLine("Numeros usados:");
 
             foreach (int item in listNumbers)

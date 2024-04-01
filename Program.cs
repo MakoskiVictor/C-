@@ -61,8 +61,13 @@ internal class Program
 
     // LISTS
 
-    Lists myList = new(10, 20, 30);
-    myList.writeList();
+    // Lists myList = new(10, 20, 30);
+    // myList.WriteList();
+
+    // DICCIONARIOS
+
+    Diccionarios myDiccionary = new("Jorge", 29, ["Julia", "Emma"]);
+    myDiccionary.writeEmpleadoInfo();
 
   }
 
