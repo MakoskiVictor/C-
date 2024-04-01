@@ -56,8 +56,13 @@ internal class Program
     // Loops.WritePairNumbersUntil(50);
 
     // ARRAYS
-    int[] myArray = [1, 2, 3, 4, 5];
-    Arrays.WriteTheArray(myArray);
+    // int[] myArray = [1, 2, 3, 4, 5];
+    // Arrays.WriteTheArray(myArray);
+
+    // LISTS
+
+    Lists myList = new(10, 20, 30);
+    myList.writeList();
 
   }
 
